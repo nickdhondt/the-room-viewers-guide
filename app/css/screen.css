@@ -1,0 +1,231 @@
+html, body {
+    color: #000;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h3 > em:before {
+    content: '“';
+}
+
+h3 > em:after {
+    content: '”';
+}
+
+.brand {
+    cursor: default;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.19rem;
+    padding-bottom: .8rem;
+    text-transform: uppercase;
+    transition: font-size .5s, line-height .5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 50px;
+}
+
+.brand-sm {
+    font-size: .75rem;
+    line-height: .64rem;
+}
+
+.footer-element > .brand {
+    direction: rtl;
+    font-size: 2rem;
+    line-height: 1.7rem;
+}
+
+.blockquote {
+    border-left-color: #eee;
+}
+
+.brand > a {
+    color: inherit;
+    position: relative;
+    text-decoration: none;
+    z-index: 999;
+}
+
+main {
+    margin-top: 106px;
+}
+
+.jumptarget::before {
+    content: "";
+    display: block;
+    height: 74px;
+    margin: -74px 0 0;
+    pointer-events: none;
+}
+
+header {
+    background: #fff;
+}
+
+.header {
+    border-bottom: .35rem solid #000;
+}
+
+.nav-ref {
+    color: #000;
+    display: block;
+    font-weight: bold;
+    line-height: .55rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-ref:hover, .nav-ref.active, .nav-ref:focus {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.subtitle {
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+    position: relative;
+    z-index: 998;
+}
+
+.article {
+    border-right: .35rem solid #000;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.footer {
+    background: #000;
+}
+
+.inverse {
+    color: #fff;
+}
+
+.footer-padding {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+section > p:last-child {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+section > p{
+    font-family: 'Lora', serif;
+}
+
+.intro {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.intro > p {
+    font-family: inherit;
+}
+
+.article > h1 {
+    border-bottom: 1px solid #000;
+}
+
+.intro > .authors {
+    color: #777;
+    font-size: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact {
+    font-size: 0.8rem;
+}
+
+.contact h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact a {
+    color: #aaa;
+}
+
+.contact a:hover {
+    border-bottom: 1px solid #aaa;
+    text-decoration: none;
+}
+
+.footer-element {
+    border-bottom: .2rem solid #fff;
+    margin-top: 2rem;
+    padding-bottom: .5rem;
+}
+
+.spoiler {
+    background: #000;
+    color: #000;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.spoiler:hover {
+    background: inherit;
+    color: inherit;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.nav-box {
+    border-top: .35rem solid #000;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-box {
+        border-top: none;
+    }
+
+    .footer-element {
+        margin-top: 0;
+    }
+
+    .brand {
+        font-size: 2rem;
+        line-height: 1.7rem;
+    }
+
+    .brand-sm {
+        font-size: 1rem;
+        line-height: .85rem;
+    }
+
+    main {
+        margin-top: 142px;
+    }
+
+    .jumptarget::before {
+        height:86px;
+        margin:-86px 0 0;
+    }
+
+    .footer-padding {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+}
