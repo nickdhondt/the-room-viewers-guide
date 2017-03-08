@@ -4,5 +4,4 @@
 /firebase.json
 /dist/
 /.idea/
-.gitignore
 node_modules/
