@@ -5,11 +5,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sw": "sw-precache --root=dist --config=sw-precache-config.js",
-    "deploy": "gulp lint && gulp build && npm run sw && firebase deploy",
-    "start": "npm run deploy",
-    "lint": "gulp lint"
+    "build": "gulp build",
+    "lint": "gulp lint",
+    "watch": "gulp watch",
+    "deploy": "npm run lint && npm run build && npm run sw && firebase deploy",
+    "start": "npm run deploy"
   },
-  "author": "Nick D'hondt",
+  "author": "Nick D'hondt & Vinnie De Craim",
   "license": "ISC",
   "devDependencies": {
     "csslint-stylish": "0.0.6",
