@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en" id="top" xmlns="http://www.w3.org/1999/html">
 <head>
+    <!-- build:base -->
+    <base href="./">
+    <!-- endbuild -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,31 +25,31 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
     <link rel="manifest" href="/app/manifest.json">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- build:css -->
     <link rel="stylesheet" href="css/screen.css">
     <!-- endbuild -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header class="container px-0 pt-3 fixed-top">
-    <div class="hamburger hidden-md-up mr-2 mt-2"><span id="menu" class="p-1">Menu</span></div>
-    <div class="header d-flex flex-column flex-md-row px-0 container">
-        <div class="brand pl-3" id="brand"><a href="#top" id="topLink">The Room viewer's guide</a></div>
+<header class="container px-0 pt-3 fixed-top header">
+    <div class="header__hamburger hidden-md-up mr-2 mt-2"><span id="menu" class="p-1">Menu</span></div>
+    <div class="header__bar d-flex flex-column flex-md-row px-0 container">
+        <div class="brand pl-3 no-select" id="brand"><a href="#top" class="brand__ref" id="topLink">The Room viewer's guide</a></div>
         <nav class="d-flex hidden-sm-down nav-box align-self-end w-100" id="nav">
             <ul class="nav text-center d-flex flex-column flex-md-row justify-content-end w-100">
                 <li>
-                    <a href="#intro" id="introLink" class="nav-ref py-3 px-3">Intro</a>
+                    <a href="#intro" id="introLink" class="nav-box__ref py-3 px-3">Intro</a>
                 </li>
                 <li>
-                    <a href="#cheers" id="cheersLink" class="nav-ref py-3 px-3">Cheers and yells</a>
+                    <a href="#cheers" id="cheersLink" class="nav-box__ref py-3 px-3">Cheers and yells</a>
                 </li>
                 <li>
-                    <a href="#activities" id="activitiesLink" class="nav-ref py-3 px-3">Activities</a>
+                    <a href="#activities" id="activitiesLink" class="nav-box__ref py-3 px-3">Activities</a>
                 </li>
                 <li>
-                    <a href="#singalong" id="singAlongLink" class="nav-ref py-3 px-3">Sing-along</a>
+                    <a href="#singalong" id="singAlongLink" class="nav-box__ref py-3 px-3">Sing-along</a>
                 </li>
             </ul>
         </nav>
@@ -59,10 +62,10 @@
     <div class="container py-5">
         <div class="row pr-3">
             <article class="col-12 col-md-8 col-sm-10 article" id="article">
-                <h1 class="pb-3 mb-0">The extensive viewer's guide to The Room.</h1>
-                <section class="intro mb-4">
-                    <div class="mb-2 authors">Vinnie De Craim & Nick D'hondt</div>
-                    <p>The Room, we all love and hate this “masterpiece”. It has brought both enjoyment and pain in our lives, for most this would be more pain than enjoyment though. To the bravehearted souls who are thinking about attending a screening: you'll need a helping hand. This is “The extensive viewer's guide to The Room”, a cumulative product that developed over the years. We included some of our favourite activities to do in front of the big screen, most known classics are also present (pssst, “SPOON!” <i class="fa fa-smile-o" aria-hidden="true"></i>). Also, <span class="spoiler">major spoilers are hidden</span>.</p>
+                <h1 class="pb-3 mb-0 article__title">The extensive viewer's guide to The Room.</h1>
+                <section class="article__section article--intro mb-4">
+                    <div class="mb-2 article__authors">Vinnie De Craim & Nick D'hondt</div>
+                    <p>The Room, we all love and hate this “masterpiece”. It has brought both enjoyment and pain in our lives, for most this would be more pain than enjoyment though. To the bravehearted souls who are thinking about attending a screening: you'll need a helping hand. This is “The extensive viewer's guide to The Room”, a cumulative product that developed over the years. We included some of our favourite activities to do in front of the big screen, most known classics are also present (pssst, “SPOON!” <i class="fa fa-smile-o" aria-hidden="true"></i>). Also, <span class="spoiler no-select">major spoilers are hidden</span>.</p>
                 </section>
                 <section id="intro" class="jumptarget">
                     <h2>Intro</h2>
@@ -70,7 +73,7 @@
                         <p class="mb-0">If a lot of people love each other, the world would be a better place to live,</p>
                         <footer class="blockquote-footer">Johnny<cite title="Source Title"></cite></footer>
                     </blockquote>
-                    <p><mark>"Anyway, how is your sex life" is volgens mij nog vrij iconisch. Kunnen we die ergens in de lijst plaatsen? Soms gebruik je film, soms movie. Keuze maken? Hier en daar een typo aangepast.</mark></p>
+                    <p><mark>[Bundle updated] "Anyway, how is your sex life" is volgens mij nog vrij iconisch. Kunnen we die ergens in de lijst plaatsen? Soms gebruik je film, soms movie. Keuze maken? Hier en daar een typo aangepast.</mark></p>
                     <p>WIP</p>
                 </section>
                 <section id="cheers" class="jumptarget">
@@ -84,38 +87,38 @@
                     <p>The most obvious ones are in the opening credits. You cheer when you read ‘Tommy Wiseau’ (which is about 10 times in the opening credits, since the guy did pretty much everything), and you go full rampage when ‘THE ROOM’-title appears in all its glory. It is only appropriate that we thank <mark>(typo)</mark> the film’s director for the existence of this masterpiece.</p>
                     <h3>Flower shop</h3>
                     <p>When the flower shop-scene starts, which perfectly captures the entire spirit of the film, cheer at the start, applaud in the end.</p>
-                    <h3><em>Spoon!</em></h3>
+                    <h3><em class="emphasize-quote">Spoon!</em></h3>
                     <p>If you ever find yourself thinking: ‘100 spoons should be enough for one film,’ don’t kid yourself. Bring as much plastic spoons as you can. Every time you spot the spoon-featured artwork in the background, hurl as much spoons at the screen as you can. The closer you are to the screen, the more extra spoons you will receive from the people in the back.</p>
                     <p>The old Viewer’s Guide mentioned that you can just throw spoons out of boredom. This is not generally appreciated. Keep your spoons for when it counts. If, for some reason, you find yourself with an overabundance of spoons after the film is finished, use them during the end credits to accompany the audience’s cheering.</p>
-                    <h3><em>Oh hai Doggy!</em></h3>
+                    <h3><em class="emphasize-quote">Oh hai Doggy!</em></h3>
                     <p>This is by far one of the most iconic and quoted lines in the movie. Everyone will yell it off the top of their lungs, so go along with it. Look for it in the flower shop-scene. You will notice it when everyone starts cheering for no reason.</p>
-                    <h3><em>You are tearing me apart, Lisa!</em></h3>
+                    <h3><em class="emphasize-quote">You are tearing me apart, Lisa!</em></h3>
                     <p>‘Oh hai Doggy’ is the most iconic line for the fans, but ‘You are tearing me apart, Lisa’ is the most famous line in its own right. If you don’t know where it is: if the entire audience starts to get uneasy, arms by their side like they're <mark>(typo)</mark> waiting for a football team to score a point, you know it’s coming. After the line-delivery, it is appropriate to cheer.</p>
-                    <h3><em>Oh hai character!!</em></h3>
+                    <h3><em class="emphasize-quote">Oh hai character!!</em></h3>
                     <p>For some reason, the film always shows characters leaving and entering a scene. Every.single.time. While this is something that can get you expelled from film school, it is also a great thing to make fun of. Every time a character enters, give him/her a proper greeting.</p>
-                    <h3><em>Goodbye character!</em></h3>
+                    <h3><em class="emphasize-quote">Goodbye character!</em></h3>
                     <p>Likewise, when a character leaves the frame, say goodbye to him. If you want to check up on the knowledge of your fellow roomies, try saying goodbye to each of the characters when they go outside during the party scene.</p>
-                    <h3><em>Focus! Unfocus!!</em></h3>
+                    <h3><em class="emphasize-quote">Focus! Unfocus!!</em></h3>
                     <p>The cinematography is consistent with the film’s plot, which means it’s crap. Every time a shot’s blurry, shout “FOCUS!” However, some of the ‘erotic’ scenes (yeah, I just used the word ‘erotic’ to describe the sex scenes) could use a bit less focus. Yell “UNFOCUS!”</p>
-                    <h3><em>Because<mark>(c vergeten in document)</mark> you’re a woman!</em></h3>
+                    <h3><em class="emphasize-quote">Because<mark>(c vergeten in document)</mark> you’re a woman!</em></h3>
                     <p>You owe it to your female friends to subvert the film’s<mark>(" ipv ' in document)</mark> misogyny into something funny. Every time a woman is portrayed as a heartless, manipulative, good-for-nothing- non-autonomous bitch, shout ‘Because you’re a woman!’</p>
-                    <h3><em>Meanwhile in San Francisco!</em></h3>
+                    <h3><em class="emphasize-quote">Meanwhile in San Francisco!</em></h3>
                     <p>There a LOT of establishing shots in this film. When you see one, remind the audience that this is San Francisco. However, don’t overdo it. Nearer to the ending, the establishing shots become so overabundant that constantly saying the line becomes a drag.</p>
-                    <h3><em>Go! Go! Go! Go!</em></h3>
+                    <h3><em class="emphasize-quote">Go! Go! Go! Go!</em></h3>
                     <p>There are a couple of tracking shots featuring the San Francisco Bridge. (this is obviously a metaphor for the connection and break-up between human beings, right?) You can cheer the camera on while panning. Celebrate/cheer when the camera makes it to the end, express your disappointment when it doesn’t.</p>
-                    <h3><em>It’s a metaphor!</em></h3>
+                    <h3><em class="emphasize-quote">It’s a metaphor!</em></h3>
                     <p>Some of the shots in the film are explicitly metaphorical. Denny eating an apple at the start of the film might be interpreted as giving into temptation. (I don’t know either, I’m just making stuff up) When this happens, shout “It’s a metaphor.” You know, to make sure there aren’t any misunderstandings. This can also be used when the rain drips over the windows during some of the more explicit scenes. Or when Johnny destroys the mirror.</p>
-                    <h3><em>Cheep cheep cheep</em></h3>
+                    <h3><em class="emphasize-quote">Cheep cheep cheep</em></h3>
                     <p>When Wiseau imitates a chicken (this happens about three times in the film), produce the CHEEP CHEEP CHEEP-sound as loud as you can, while performing your best chicken-imitation.</p>
-                    <h3><em>Who the fuck are you?</em></h3>
+                    <h3><em class="emphasize-quote">Who the fuck are you?</em></h3>
                     <p>A lot of characters just appear for no reason. You don’t know who they are or where they come from. You also shouldn’t care. Whenever this happens, shout “who the fuck are you?” When Peter is replaced by another actor, who doesn’t resemble Peter AT ALL, you can also deliver this line. From my experience, most of the audience doesn’t even realize that it’s the same Peter.</p>
-                    <h3><em>HAHAHAHA</em></h3>
+                    <h3><em class="emphasize-quote">HAHAHAHA</em></h3>
                     <p>Johnny has a weird way of laughing. It is the perfect ringtone, and a screening is the perfect occasion to make fun of it.</p>
-                    <h3><em>Wow wow wow</em></h3>
+                    <h3><em class="emphasize-quote">Wow wow wow</em></h3>
                     <p>When Mark tries to throw Peter off the roof, start yelling in panic due to the intensity of this scene. When it’s over, you can say things like “wow, that was intense.”</p>
-                    <h3><em>Are you okay?</em></h3>
+                    <h3><em class="emphasize-quote">Are you okay?</em></h3>
                     <p>When Peter trips while playing football, express your concerns for that nasty fall.</p>
-                    <h3><em>No no NOOOOOOOOO</em></h3>
+                    <h3><em class="emphasize-quote">No no NOOOOOOOOO</em></h3>
                     <p><mark>(Vinnie, kan je hier bij plaatsen waar in de film dit ongeveer gebeurt? Dit is de eerste sex scene, right?)</mark>Upon witnessing Tommy Wiseau’s ass, and in the seconds preceding it, yell as scared and grossed out as you can.</p>
                 </section>
                 <section id="activities" class="jumptarget">
@@ -137,7 +140,7 @@
                     <h3>Sit on the floor</h3>
                     <p>When Denny suddenly sits on the floor, you can do the same, for as long as you like. Just make sure not to miss anything important.</p>
                     <h3>Mourning</h3>
-                    <p>Spoiler alert: <span class="spoiler">Johnny dies in the end</span>. When he’s lying on the floor with the other characters, get up from your seat and stand next to the screen, to stand alongside the characters. Express your heartfelt sorrow for <span class="spoiler">Johnny’s death</span>. I’ve seen people cheering after <span class="spoiler">the gun shot</span>, don’t do this. The scene requires something different.</p>
+                    <p>Spoiler alert: <span class="spoiler no-select">Johnny dies in the end</span>. When he’s lying on the floor with the other characters, get up from your seat and stand next to the screen, to stand alongside the characters. Express your heartfelt sorrow for <span class="spoiler no-select">Johnny’s death</span>. I’ve seen people cheering after <span class="spoiler no-select">the gun shot</span>, don’t do this. The scene requires something different.</p>
                 </section>
                 <section id="singalong" class="jumptarget mb-0">
                     <h2>Sing-along</h2>
@@ -225,41 +228,41 @@
         </div>
     </div>
 </main>
-<footer class="footer inverse text-right">
-    <div class="container footer-padding">
+<footer class="footer text-right">
+    <div class="container footer--padding">
         <div class="row d-flex align-items-end">
             <div class="col-8 ml-auto col-md-4">
-                <div class="contact footer-element mt-0">
-                    <h2 class="mb-2">Nick D'hondt</h2>
+                <div class="contact footer__element mt-0">
+                    <h2 class="mb-2 contact__name">Nick D'hondt</h2>
                     <ul class="list-unstyled m-0">
                         <li>
-                            <a href="https://www.linkedin.com/in/nick-dhondt/" target="_blank">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/nick-dhondt/" class="contact__ref" target="_blank">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/dhondt_nick" target="_blank">Twitter <i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/dhondt_nick" class="contact__ref" target="_blank">Twitter <i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://nickdhondt.github.io/" target="_blank">Portfolio <i class="fa fa-briefcase" aria-hidden="true"></i></a>
+                            <a href="https://nickdhondt.github.io/" class="contact__ref" target="_blank">Portfolio <i class="fa fa-briefcase" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-8 ml-auto col-md-4">
-                <div class="contact footer-element">
-                    <h2 class="mb-2">Vinnie De Craim</h2>
+                <div class="contact footer__element">
+                    <h2 class="mb-2 contact__name">Vinnie De Craim</h2>
                     <ul class="list-unstyled m-0">
                         <li>
-                            <a href="https://be.linkedin.com/in/vinniedecraim" target="_blank">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href="https://be.linkedin.com/in/vinniedecraim" class="contact__ref" target="_blank">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://vimeo.com/vinniedecraim" target="_blank">Vimeo <i class="fa fa-vimeo-square" aria-hidden="true"></i></a>
+                            <a href="https://vimeo.com/vinniedecraim" class="contact__ref" target="_blank">Vimeo <i class="fa fa-vimeo-square" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-8 ml-auto col-md-4">
-                <div class="footer-element">
-                    <div class="brand ml-auto p-0">
+                <div class="footer__element">
+                    <div class="brand brand--right no-select ml-auto p-0">
                         The Room viewer's guide
                     </div>
                 </div>

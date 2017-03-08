@@ -116,7 +116,10 @@ gulp.task("copy-css", function () {
 
 gulp.task("copy-html", function () {
     gulp.src(PATHS.HTML.SRC)
-        .pipe(htmlreplace({"js": "js/bundle.min.js", "css": "css/styles.min.css"}))
+        .pipe(htmlreplace({"js": "js/bundle.min.js", "css": "css/styles.min.css","base": {
+            src: ["/"],
+            tpl: "<base href=\"%s\">"
+        }}))
         .pipe(gulp.dest(PATHS.HTML.DEST))
         .pipe(livereload());
 });
