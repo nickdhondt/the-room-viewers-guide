@@ -10,7 +10,7 @@ Build to the `/dist` folder.
 npm run build
 ```
 ## Watch ``/app`` folder
-Automatically compiles from `/app` to `/dist` folder when changes are made.
+Automatically builds from `/app` to `/dist` folder when changes are made.
 **Note: you'll need LiveReload plugin to automatically refresh your browser view.**
 
 ```
