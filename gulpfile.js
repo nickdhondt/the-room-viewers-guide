@@ -80,7 +80,6 @@ gulp.task("lint", ["lint-js", "lint-css", "lint-html"]);
 gulp.task("build", function () {
     runSequence("clean", ["copy-html", "copy-root", "copy-css", "copy-js", "copy-img"], function () {
         gutil.log(gutil.colors.green("App build successful"));
-        notify("App built!");
     });
 });
 
