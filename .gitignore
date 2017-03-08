@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+/database.rules.json
+/.firebaserc
+/firebase.json
+/dist/
+/.idea/
+.gitignore
+node_modules/
