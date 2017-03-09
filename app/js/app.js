@@ -1,7 +1,14 @@
 $(document).ready(init);
 
 function init() {
-    var scrollSpyArray = [[$("#intro"), $("#introLink")], [$("#cheers"), $("#cheersLink")], [$("#activities"), $("#activitiesLink")], [$("#singalong"), $("#singAlongLink")]];
+    var scrollSpyArray = [
+        [$("#intro"), $("#introLink")],
+        [$("#cheers"), $("#cheersLink")],
+        [$("#activities"), $("#activitiesLink")],
+        [$("#singalong"), $("#singAlongLink")],
+        [$("#screenings"), $("#screeningsLink")],
+        [$("#additional"), $("#additionalLink")]
+    ];
 
     $.each(scrollSpyArray, function (index, element) {
         scrollSpy(element[0], element[1]);
@@ -23,7 +30,7 @@ function init() {
 }
 
 function hideNavMenu() {
-    $("#nav").first().addClass("hidden-sm-down");
+    $("#nav").first().addClass("hidden-md-down");
 }
 
 function smoothScroll() {
@@ -51,15 +58,15 @@ function navBarSpy() {
 
 function toggleMenu() {
     var nav = $("#nav").first();
-    if (nav.hasClass("hidden-sm-down")) nav.removeClass("hidden-sm-down");
-    else nav.addClass("hidden-sm-down");
+    if (nav.hasClass("hidden-md-down")) nav.removeClass("hidden-md-down");
+    else nav.addClass("hidden-md-down");
 }
 
 function scrollSpy(element, link) {
     var enter, leave;
     var buffer = 90;
 
-    if (window.matchMedia("screen and (min-width: 768px)").matches) buffer = 90;
+    if (window.matchMedia("screen and (min-width: 992px)").matches) buffer = 90;
     else buffer = 78;
 
     $(window).scroll(function () {

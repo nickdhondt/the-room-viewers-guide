@@ -1,5 +1,5 @@
 # The extensive viewer's guide to The Room.
-The Room viewer's guide is a lead to the attending a screening of the magnificent film The Room. This is the code behind the guide.
+The Room viewer's guide is a lead to attending a screening of the magnificent film The Room. This is the code behind the guide.
 ## Install
 ```
 npm install

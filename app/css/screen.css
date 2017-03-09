@@ -1,6 +1,6 @@
 html, body {
     color: #000;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 h1, h2 {
@@ -32,11 +32,11 @@ main {
 }
 
 .emphasize-quote:before {
-    content: '“';
+    content: "“";
 }
 
 .emphasize-quote:after {
-    content: '”';
+    content: "”";
 }
 
 .blockquote {
@@ -103,16 +103,16 @@ main {
     margin-bottom: 1rem;
 }
 
-.article__section > p {
-    font-family: 'Lora', serif;
+.article__section > p, .article__section > ol {
+    font-family: "Lora", serif;
 }
 
-.article--intro {
-    font-family: 'Noto Sans', sans-serif;
+.article__section--intro {
+    font-family: "Noto Sans", sans-serif;
     font-size: 1.2rem;
 }
 
-.article--intro > p {
+.article__section--intro > p {
     font-family: inherit;
 }
 
@@ -195,7 +195,7 @@ main {
     font-weight: bold;
 }
 
-.contact__ref {
+.contact .contact__ref {
     color: #aaa;
 }
 
@@ -204,7 +204,7 @@ main {
     text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     main {
         margin-top: 142px;
     }
@@ -235,5 +235,15 @@ main {
     .footer--padding {
         padding-bottom: 5rem;
         padding-top: 5rem;
+    }
+}
+
+@media print {
+    main {
+        margin-top: 0;
+    }
+
+    .jumptarget::before {
+        display: none;
     }
 }
