@@ -33,6 +33,9 @@ const PATHS = {
         MANIFEST: {
             SRC: "./app/manifest.json"
         },
+        SM: {
+            SRC: "./app/sitemap.xml"
+        },
         SW: {
             SRC: "./app/service-worker.js"
         },
@@ -99,7 +102,7 @@ gulp.task("copy-js", function () {
 });
 
 gulp.task("copy-root", function () {
-    gulp.src([PATHS.ROOT.MANIFEST.SRC, PATHS.ROOT.SW.SRC])
+    gulp.src([PATHS.ROOT.MANIFEST.SRC, PATHS.ROOT.SW.SRC, PATHS.ROOT.SM.SRC])
         .pipe(gulp.dest(PATHS.ROOT.DEST));
 });
 

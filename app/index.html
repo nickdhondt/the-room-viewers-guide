@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" id="top" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <!-- build:base -->
     <base href="./">
@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="The Room. Those of you who have watched this masterful film probably thought ‘what the fuck?’ For the others, you'll soon see what all the fuss is about. The brave-hearted souls amongst you who have never attended a screening, but are willing to take the jump. You’ll will need a helping hand, a light in the darkness this film casts on the industry. This is “The extensive viewer's guide to The Room”, a cumulative product that developed over the years. There’s a lot you can do in front of the big screen. We included some of our favourite activities and you'll find most of the classics too. Anyway, how's your sex-life?">
-    <meta name="keywords" content="the room, room, viewer's, guide, spoon, go go go, San Francisco, Tommy, Wiseau, Tommy Wiseau, Greg, Sestero, Greg Sestero, Juliette Danielle, Juliette, Danielle, hi doggy, cheep, cheep cheep cheep, Mission Impossible, You’re my rose, Kitra Wiliams, Kitra Wiliams, lyrics, I Will, Jarah Gibson">
+    <meta name="description" content="This website aims to provide a platform for the Tommy Wiseau-directed cult film The Room, for fans and new audiences alike. It concerns all of its rules and mysteries.">
+    <meta name="keywords" content="the room, room, viewer's, guide, spoon, go go go, San Francisco, Tommy, Wiseau, Tommy Wiseau, Greg, Sestero, Greg Sestero, Juliette Danielle, Juliette, Danielle, hi doggy, cheep, cheep cheep cheep, Mission Impossible, You’re my rose, Kitra Wiliams, Kitra Wiliams, lyrics, I Will, Jarah Gibson, spoon, spoons, movie, film, worst film ever, worst movie ever">
     <title>The extensive viewer's guide to The Room</title>
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
@@ -23,7 +23,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/app/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- build:css -->
     <link rel="stylesheet" href="css/screen.css">
@@ -33,35 +33,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header class="container px-0 pt-3 fixed-top header print-hidden">
+<header class="container px-0 fixed-top header print-hidden">
     <div class="header__hamburger hidden-lg-up mr-2 mt-2"><span id="menu" class="p-1">Menu</span></div>
     <div class="header__bar d-flex flex-column flex-lg-row px-0 container">
-        <div class="brand pl-3 no-select" id="brand"><a href="#top" class="brand__ref" id="topLink">The Room viewer's guide</a></div>
+        <div class="brand pl-3 pt-3 no-select" id="brand"><a href="#top" class="brand__ref" id="topLink">The Room viewer's guide</a></div>
         <nav class="d-flex hidden-md-down nav-box align-self-end w-100" id="nav">
-            <ul class="nav text-center d-flex flex-column flex-lg-row justify-content-end w-100">
-                <li>
+            <ul class="nav text-center d-md-flex flex-column flex-lg-row justify-content-end w-100">
+                <li class="d-flex flex-column-reverse align-self-lg-end">
                     <a href="#intro" id="introLink" class="nav-box__ref py-3 px-3">Intro</a>
+                    <img src="images/assets/spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
                 </li>
-                <li>
+                <li class="d-flex flex-column-reverse align-self-lg-end">
                     <a href="#cheers" id="cheersLink" class="nav-box__ref py-3 px-3">Cheers and yells</a>
+                    <img src="images/assets/spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
                 </li>
-                <li>
+                <li class="d-flex flex-column-reverse align-self-lg-end">
                     <a href="#activities" id="activitiesLink" class="nav-box__ref py-3 px-3">Activities</a>
+                    <img src="images/assets/spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
                 </li>
-                <li>
+                <li class="d-flex flex-column-reverse align-self-lg-end">
                     <a href="#singalong" id="singAlongLink" class="nav-box__ref py-3 px-3">Sing-along</a>
+                    <img src="images/assets/spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
                 </li>
-                <li>
+                <li class="d-flex flex-column-reverse align-self-lg-end">
                     <a href="#screenings" id="screeningsLink" class="nav-box__ref py-3 px-3">Screenings</a>
+                    <img src="images/assets/spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
                 </li>
-                <li>
+                <li class="d-flex flex-column-reverse align-self-lg-end">
                     <a href="#additional" id="additionalLink" class="nav-box__ref py-3 px-3">Additional</a>
+                    <img src="images/assets/spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
                 </li>
             </ul>
         </nav>
     </div>
 </header>
-<main>
+<main id="top">
     <div class="container subtitle pt-1 pb-4">
         The extensive viewer's guide to The Room.
     </div>
@@ -71,7 +77,12 @@
                 <h1 class="pb-3 mb-0 article__title">The extensive viewer's guide to The Room.</h1>
                 <section class="article__section article__section--intro mb-4">
                     <div class="mb-2 article__authors">Vinnie De Craim & Nick D'hondt</div>
-                    <p>The Room. Those of you who have watched this masterful film probably thought ‘what the fuck?’ For the others, you'll soon see what all the fuss is about. The brave-hearted souls amongst you who have never attended a screening, but are willing to take the jump. You’ll will need a helping hand, a light in the darkness this film casts on the industry. This is “The extensive viewer's guide to The Room”, a cumulative product that developed over the years. There’s a lot you can do in front of the big screen. We included some of our favourite activities and you'll find most of the classics too. Anyway, <span class="spoiler">how's your sex-life</span>?</p>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Enter The Room and leave forever changed!</p>
+                        <footer class="blockquote-footer">Dvd-tagline<cite title="Source Title"></cite></footer>
+                    </blockquote>
+                    <p>Our ambition is to create an online place related to all things concerning the cult film ‘The Room.’ It is designed to offer a complete account of all the things you should know, before or after you attend a viewing. Because either you’re very thrilled to learn more, or you’re completely lost, and still wondering what the hell it was about. This website expands upon the classic Viewer’s Guide and is the cumulative product of years of Room-experience. If you’re new to the site, read the introduction below. Also, <span class="spoiler"><span>major spoilers are hidden</span></span>.</p>
+
                 </section>
                 <section id="intro" class="jumptarget article__section">
                     <h2>On love, spoons and other things.</h2>
@@ -88,6 +99,7 @@
                     <p>Why spoons? Well, film scholar Ernest Mathijs, head of the Centre for Cinema Studies, introduced a successful screening in Brussels. He postulated that a plastic spoon is a symbol for waste and uselessness. Something that you use once, and never use again. If we ask ourselves the question, why would we revisit waste, there’s perhaps a lesson to be learned.</p>
                     <p>To conclude, we would like to say that this viewer’s guide, in no possible way, is a definite description of what a Room-screening should be. The Room is not something you experience in a predestined way, ticking of checklists, throwing around footballs because you have to. A screening is at its best a place of experimentation. Every single quote or action is capable to invoke imitation or laughter. You shouldn’t narrow yourself down to a set of rules. But of course, having a few good ideas in mind before entering the theatre wouldn’t hurt. We didn’t even scratch the surface about what The Room has to offer. In its own, little idiosyncratic world, it might as well be the best film ever made. There is a reason why most film buffs saw The Room more than Citizen Kane. It is a celebration of film. Even if it’s not the type of work you would consider ‘grand art’, you should be grateful for it.</p>
                     <p>Just keep throwing those spoons.</p>
+                    <span class="img-util"><img src="images/assets/spoon-picture.jpg" alt="Picture of a spoon." class="img-fluid mb-3 img-util--responsive-50"></span>
                     <p>The authors.</p>
                 </section>
                 <section id="cheers" class="jumptarget article__section">
@@ -98,6 +110,10 @@
                     </blockquote>
                     <p>Attending a Room-screening, or hosting one with your friends, is supposed to be fun. Cheering is part of the game. You can cheer, applaud, whistle or yell things during certain moments in the film.</p>
                     <h3>Wiseau!</h3>
+                    <figure class="figure w-100">
+                        <img src="images/assets/tommy-wiseau.jpg" alt="Written by Tommy Wiseau" class="figure-img img-fluid w-100">
+                        <figcaption class="figure-caption">His name appears once more.</figcaption>
+                    </figure>
                     <p>The most obvious ones are in the opening credits. You cheer when you read ‘Tommy Wiseau’ (which is about 10 times in the opening credits, since the guy did pretty much everything), and you go full rampage when ‘THE ROOM’-title appears in all its glory. It is only appropriate that we thank the film’s director for the existence of this masterpiece.</p>
                     <h3>Flower shop</h3>
                     <p>When the flower shop-scene starts, which perfectly captures the entire spirit of the film, cheer at the start, applaud in the end.</p>
@@ -107,6 +123,10 @@
                     <h3><em class="emphasize-quote">Oh hai Doggy!</em></h3>
                     <p>This is by far one of the most iconic and quoted lines in the film. Everyone will yell it off the top of their lungs, so go along with it. Look for it in the flower shop-scene. You will notice it when everyone starts cheering for no reason.</p>
                     <h3><em class="emphasize-quote">You are tearing me apart, Lisa!</em></h3>
+                    <figure class="figure w-100">
+                        <img src="images/assets/you-are-tearing-me-apart.jpg" alt="You are tearing me apart, Lisa!" class="figure-img img-fluid w-100">
+                        <figcaption class="figure-caption">Well, nothing to say about this one :)</figcaption>
+                    </figure>
                     <p>‘Oh hai Doggy’ is the most iconic line for the fans, but ‘You are tearing me apart, Lisa’ is the most famous line in its own right. If you don’t know where it is: if the entire audience starts to get uneasy, arms by their side like they’re waiting for a football team to score a point, you know it’s coming. After the line-delivery, it is appropriate to cheer.</p>
                     <h3><em class="emphasize-quote">Oh hai character!!</em></h3>
                     <p>For some reason, the film always shows characters leaving and entering a scene. Every.single.time. While this is something that can get you expelled from film school, it is also a great thing to make fun of. Every time a character enters, give him/her a proper greeting.</p>
@@ -134,7 +154,7 @@
                     <p>When Peter trips while playing football, express your concerns for that nasty fall.</p>
                     <h3><em class="emphasize-quote">No no NOOOOOOOOO</em></h3>
                     <p>After the first sex scene has ended, you will have the opportunity to gaze upon Tommy Wiseau’s ass. When the big reveal happens, and in the seconds preceding it, yell as scared and grossed out as you can.</p>
-                    <h3><em class="emphasize-quote">Anyway, how’s your sex life?</em></h3>
+                    <h3><em class="emphasize-quote">Anyway, how’s your sex-life?</em></h3>
                     <p>At this point, the newbies in the audience will be totally lost, and at this point, they’ll be too afraid to ask. This is the most awkward quote in the film. It happens in the hot chocolate-scene (you know, after having to sit through half of San Francisco ordering stuff). Say it as casually as possible.</p>
                 </section>
                 <section id="activities" class="jumptarget article__section">
@@ -145,6 +165,10 @@
                     </blockquote>
                     <p>Filmgoing is a static experience, right? Not so when attending a Room-screening. Here are a few things you can do to get your blood flowing.</p>
                     <h3>Playing football</h3>
+                    <figure class="figure w-100">
+                        <img src="images/assets/throw-football.jpg" alt="The football is featured often." class="figure-img img-fluid w-100">
+                        <figcaption class="figure-caption">The football is featured often.</figcaption>
+                    </figure>
                     <p>A lot of scenes feature characters playing football. When this happens, just do the same with your friends. Position yourself strategically in the theatre, or just stand up and throw from the sides. Just make sure not to hit the screen. Or, to a lesser extent, other people.</p>
                     <h3>Reenactment</h3>
                     <p>If you want to take your Room-love to a new level, you can dress up and act out different scenes next to the screen for audiences to enjoy. The most popular one is “Denny VS Chris R.” But feel free to experiment.</p>
@@ -169,7 +193,7 @@
                     <p>Remember to keep delivering comments during the scenes itself. Especially when Johnny tries to penetrate Lisa’s belly button.</p>
                     <h3>First scene: I Will – Jarah Gibson</h3>
                     <blockquote class="blockquote">
-                        <p>I can't explain, why I feel this way about you,<br />It'd be a shame, living in this world without you.<br />There's nothing I wouldn't do for you.<br />You are my fantasy dream come true. (oooooh)</p>
+                        <p>I can't explain, why I feel this way about you.<br />It'd be a shame, living in this world without you.<br />There's nothing I wouldn't do for you.<br />You are my fantasy dream come true. (oooooh)</p>
                         <p>When I see your face, it stirs up my emotions.<br />Your style and grace, it inspires my devotion.<br />There's nothing I wouldn't do for you,<br />you are my fantasy dream come true. (oooooh)</p>
                         <p>I will stand in the way of a bullet.<br />I will wander a forest of flames.<br />I will climb the highest of mountains.<br />Just to show you I love you, I will.</p>
                         <p>I will stand in the way of a bullet.<br />I will wander a forest of flames.<br />I will climb the highest of mountains.<br />Just to show you I love you, I will.</p>
@@ -192,12 +216,11 @@
                 </section>
                 <section id="screenings" class="jumptarget article__section">
                     <h2>Screenings</h2>
-                    <p><mark>(Hier nog iets?)</mark></p>
-                    <h3>Organising a screening</h3>
                     <blockquote class="blockquote">
                         <p class="mb-0">Thank you, honey, this is a beautiful party! You invited all my friends. Good thinking!</p>
                         <footer class="blockquote-footer">Johnny<cite title="Source Title"></cite></footer>
                     </blockquote>
+                    <h3>Organising a screening</h3>
                     <p>As you probably know, The Room is best enjoyed in a theatre with a large number of dedicated fans. However, in some places Room-screenings aren’t exactly common. So if you want to show your friends how it’s done, possibly in preparation for a larger screening, here are some quick tips.</p>
                     <ol>
                         <li>Make sure it’s dark. People are more likely to do weird stuff when it’s dark.</li>
@@ -289,6 +312,15 @@
             console.log('Service Worker registration failed: ', err);
         });
     }
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-93345879-1', 'auto');
+    ga('send', 'pageview');
+
 </script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <!-- build:js -->

@@ -7,6 +7,16 @@ h1, h2 {
     font-weight: bold;
 }
 
+h3:before {
+    background-image: url("../images/assets/football.png");
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: .5rem;
+    content:"";
+}
+
 main {
     margin-top: 106px;
 }
@@ -56,6 +66,18 @@ main {
     font-weight: bold;
     position: relative;
     z-index: 998;
+}
+
+.img-util {
+    display: inline-block;
+
+}
+
+.img-util--responsive-50 {
+    /* Maybe later */
+    /*zoom: 50%;*/
+    width: 50%;
+    height: 50%;
 }
 
 /* === BRAND === */
@@ -137,6 +159,17 @@ main {
     border-bottom: .35rem solid #000;
 }
 
+.nav-box__spoon {
+    display: none;
+    margin: 0 auto .33rem auto;
+    width: 4rem;
+    position: relative;
+}
+
+.nav-box__ref:hover + .nav-box__spoon, .nav-box__ref:focus + .nav-box__spoon, .nav-box__ref--active + .nav-box__spoon {
+    display: block;
+}
+
 .nav-box__ref {
     color: #000;
     display: block;
@@ -204,6 +237,15 @@ main {
     text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+    .img-util--responsive-50 {
+        /* Maybe later */
+        /*zoom: 100%;*/
+        width: 100%;
+        height: 100%;
+    }
+}
+
 @media screen and (min-width: 992px) {
     main {
         margin-top: 142px;
@@ -235,15 +277,5 @@ main {
     .footer--padding {
         padding-bottom: 5rem;
         padding-top: 5rem;
-    }
-}
-
-@media print {
-    main {
-        margin-top: 0;
-    }
-
-    .jumptarget::before {
-        display: none;
     }
 }
