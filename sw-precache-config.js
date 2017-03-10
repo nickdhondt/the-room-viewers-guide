@@ -7,6 +7,7 @@ module.exports = {
         'dist/**/**.js',
         'dist/**/**.css',
         'dist/**/**.png',
+        'dist/**/**.jpg',
         'dist/**.json'
     ],
     runtimeCaching: [

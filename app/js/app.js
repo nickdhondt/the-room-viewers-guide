@@ -51,9 +51,16 @@ function smoothScroll() {
 function navBarSpy() {
     var scrollTop = $(document).scrollTop();
     var brand = $("#brand").first();
+    var bar = $(".header__bar").first();
 
-    if (scrollTop >= 80 && !brand.hasClass("brand--sm")) brand.addClass("brand--sm");
-    else if (scrollTop < 80 && brand.hasClass("brand--sm")) brand.removeClass("brand--sm");
+    if (scrollTop >= 80 && !brand.hasClass("brand--sm")) {
+        brand.addClass("brand--sm");
+        bar.addClass("header__bar--sm");
+    }
+    else if (scrollTop < 80 && brand.hasClass("brand--sm")) {
+        brand.removeClass("brand--sm");
+        bar.removeClass("header__bar--sm");
+    }
 }
 
 function toggleMenu() {
