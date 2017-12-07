@@ -34,6 +34,7 @@
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
     "node-notifier": "^5.0.2",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "sw-precache": "^5.1.1"
   }
 }

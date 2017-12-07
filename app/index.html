@@ -33,55 +33,59 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header class="container px-0 fixed-top header print-hidden">
-    <div class="header__hamburger hidden-lg-up mr-2 mt-2"><span id="menu" class="p-1">Menu</span></div>
-    <div class="header__bar d-flex flex-column flex-lg-row px-0 container">
-        <div class="brand pl-3 pt-3 no-select" id="brand"><a href="#top" class="brand__ref" id="topLink">The Room viewer's guide</a></div>
-        <nav class="d-flex hidden-md-down nav-box align-self-end w-100" id="nav">
-            <ul class="nav text-center d-md-flex flex-column flex-lg-row justify-content-end w-100">
-                <li class="d-flex flex-column-reverse align-self-lg-end">
-                    <a href="#intro" id="introLink" class="nav-box__ref py-3 px-3">Intro</a>
-                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
+<header class="container px-0 fixed-top header print-absolute">
+    <div id="top" class="top"></div>
+    <div class="header__hamburger hidden-md-up"><span id="menu" class="p-1">Menu</span></div>
+    <div class="header__bar d-flex flex-column flex-md-row container">
+        <div class="brand__container">
+            <div class="brand brand--transition no-select" id="brand"><a href="#top" class="brand__ref" id="topLink">The Room viewer's guide</a></div>
+            <img src="images/assets/football-header.jpg" class="brand__background" alt="Football">
+        </div>
+        <nav class="d-flex hidden-sm-down nav-box align-self-end w-100" id="nav">
+            <ul class="nav text-center d-sm-flex flex-column flex-md-row justify-content-end w-100">
+                <li class="d-flex flex-column-reverse align-self-md-end nav-box__container">
+                    <a href="#intro" id="introLink" class="nav-box__ref">Intro</a>
+                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="img-fluid nav-box__spoon">
                 </li>
-                <li class="d-flex flex-column-reverse align-self-lg-end">
-                    <a href="#cheers" id="cheersLink" class="nav-box__ref py-3 px-3">Cheers and yells</a>
-                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
+                <li class="d-flex flex-column-reverse align-self-lg-end nav-box__container">
+                    <a href="#cheers" id="cheersLink" class="nav-box__ref">Cheers and yells</a>
+                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="img-fluid nav-box__spoon">
                 </li>
-                <li class="d-flex flex-column-reverse align-self-lg-end">
-                    <a href="#activities" id="activitiesLink" class="nav-box__ref py-3 px-3">Activities</a>
-                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
+                <li class="d-flex flex-column-reverse align-self-lg-end nav-box__container">
+                    <a href="#activities" id="activitiesLink" class="nav-box__ref">Activities</a>
+                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="img-fluid nav-box__spoon">
                 </li>
-                <li class="d-flex flex-column-reverse align-self-lg-end">
-                    <a href="#singalong" id="singAlongLink" class="nav-box__ref py-3 px-3">Sing-along</a>
-                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
+                <li class="d-flex flex-column-reverse align-self-lg-end nav-box__container">
+                    <a href="#singalong" id="singAlongLink" class="nav-box__ref">Sing-along</a>
+                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="img-fluid nav-box__spoon">
                 </li>
-                <li class="d-flex flex-column-reverse align-self-lg-end">
-                    <a href="#screenings" id="screeningsLink" class="nav-box__ref py-3 px-3">Screenings</a>
-                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
+                <li class="d-flex flex-column-reverse align-self-lg-end nav-box__container">
+                    <a href="#screenings" id="screeningsLink" class="nav-box__ref">Screenings</a>
+                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="img-fluid nav-box__spoon">
                 </li>
-                <li class="d-flex flex-column-reverse align-self-lg-end">
-                    <a href="#additional" id="additionalLink" class="nav-box__ref py-3 px-3">Additional</a>
-                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="hidden-md-down img-fluid nav-box__spoon">
+                <li class="d-flex flex-column-reverse align-self-lg-end nav-box__container hidden-md-up">
+                    <a href="#additional" id="additionalLink" class="nav-box__ref">Additional</a>
+                    <img src="images/assets/better-spoon.png" alt="SPOON!" class="img-fluid nav-box__spoon">
                 </li>
             </ul>
         </nav>
     </div>
 </header>
-<main id="top">
-    <div class="container subtitle pt-1 pb-4">
+<main>
+    <div class="container subtitle">
         The extensive viewer's guide to The Room.
     </div>
-    <div class="container py-5">
-        <div class="row pr-3">
+    <div class="container article__content">
+        <div class="row article__row">
             <article class="col-12 col-md-8 col-sm-10 article" id="article">
-                <h1 class="pb-3 mb-0 article__title">The extensive viewer's guide to The Room.</h1>
-                <section class="article__section article__section--intro mb-4">
-                    <div class="mb-2 article__authors">Vinnie De Craim & Nick D'hondt</div>
+                <h1 class="article__title">The extensive viewer's guide to The Room.</h1>
+                <section class="article__section article__section--intro">
+                    <div class="article__authors">Vinnie De Craim & Nick D'hondt</div>
                     <blockquote class="blockquote">
                         <p class="mb-0">Enter The Room and leave forever changed!</p>
                         <footer class="blockquote-footer">Dvd-tagline<cite title="Source Title"></cite></footer>
-                </blockquote>
-                    <p>Our ambition is to create an online place related to all things concerning the cult film ‘The Room.’ It is designed to offer a complete account of all the things you should know, before or after you attend a viewing. Because either you’re very thrilled to learn more, or you’re completely lost, and still wondering what the hell it was about. This website expands upon the classic Viewer’s Guide and is the cumulative product of years of Room-experience. If you’re new to the site, read the introduction below. Also, <span class="spoiler"><span>major spoilers are hidden</span></span>.</p>
+                    </blockquote>
+                    <p>Our ambition is to create an online place related to all things concerning the cult film ‘The Room.’ It is designed to offer a complete account of all the things you should know, before or after you attend a viewing. Because either you’re very thrilled to learn more, or you’re completely lost, and still wondering what the hell it was about. This website expands upon the classic Viewer’s Guide and is the cumulative product of years of Room-experience. If you’re new to the site, read the introduction below.</p>
                 </section>
                 <section id="intro" class="jumptarget article__section">
                     <h2>On love, spoons and other things.</h2>
@@ -89,14 +93,14 @@
                         <p class="mb-0">If a lot of people love each other, the world would be a better place to live.</p>
                         <footer class="blockquote-footer">Johnny<cite title="Source Title"></cite></footer>
                     </blockquote>
-                    <p>The hardest thing about writing an introduction is motivating why it is necessary. I mean, you just stumbled upon a website dedicated to The Room. Surely this isn’t a coincidence? Why in God’s name would you search for ‘Room Viewing Guide’, if not on purpose?</p>
-                    <p>And yet, here it is. A full-blown introduction, meant to welcome you to this little project. The authors behind this site are dedicated roomies, eager to spread the film’s ‘message’ to as much people as possible. Most of you may be wondering ‘why the hell would you put that much effort into this? Isn’t The Room just something you make fun of?’ Well yes, and no. The entire idea behind the viewer’s guide is to maximise your enjoyment of the film. But, on another level, there is a deeper discussion to be found here. The fact that The Room has the ‘official’ status of ‘Worst Film Ever Made’, doesn’t account for its success in the Midnight Film Circuit. Actually, we can argue that there are worse films out there. Say what you like, at least The Room is consistently bad, which paradoxically makes it more watchable than many ‘average’ films.</p>
-                    <p>Part of its appeal derives from its enigma. There’s a substantial amount of scholarship done around the phenomenon of ‘cult film’. Why does one film gather a large cult audience when other film fades into obscurity? The answer is: we don’t really know. When we look at different cult films, we can only conclude that it is the audience that decides what is cult and what is not. But there are some striking similarities. When we take two big 20th-century cult hits, like ‘The Rocky Horror Picture Show’, or ‘The Big Lebowski’, what are the similarities? They are both very quotable for one. But they are films people can relate to, and that are deeply embedded in their time of origin. Passion sticks, and it survives through age.</p>
-                    <p>All is well and done, but how can we compare The Room to these two classics? Well, possibly for that same reason. Passion sticks. The film continues to fascinate viewers, not because of its badness, but for its passion. Even if this passion is, to put it mildly, ‘misplaced.’ Take a look at the facts: the film played for two weeks, grossing only 1900 dollars, which makes it the biggest flop in box office history. It was shot with a budget of six million dollars, with photography taking up an entire 6 months. There were 400 crew members, on two units, along with cast members who were constantly replaced. This is fairly unique in B-cinema, which is usually known for its poor production values. Of course, that money wasn’t exactly put up on the screen. It originated as a play, then became a 500-page book, which Wiseau then adapted to a screenplay. And that’s only scratching the surface. No One knows how Wiseau managed to scrape all that money together. There are some interviews with Wiseau where he talks about importing leather jackets, but this hasn’t been confirmed yet. Likewise, Greg Sestero, playing Mark in the film, shows us the tip of the iceberg in his autobiographical ‘The Disaster Artist.’ For every mystery solved, a dozen more pop up.</p>
-                    <!-- <p>Some additional research has been done. Apparently, Tommy Wiseau came from the Soviet-union and entered America at a later point in his life. That’s all we know. Wiseau refuses to share his origin story, to the fan’s regret. Because everyone wants to know what makes the man tick. After all, he made The Room, so some deeply disturbing stuff must have happened. This is Hollywood’s most secretive man. He made, presumably, the worst film ever made. He still believes he made a masterpiece. He paid, from his own money, for a billboard advertising his film. For a total of five years, the billboard became a tourist attraction, which was visited more than the film itself. The Room, according to Wiseau, is a place where good and bad things happen. That may be true, but it is also a place of great secrets. Perhaps that’s the reason while we revisit it time and time again.</p> -->
-                    <p>Passion sticks, and the same goes for the fans. All over the world, Room-screenings are held and celebrated. If not for these people, the film would have died. The original roomie is, of course, Michael Rousselet. A screenwriter, who started gathering groups of friends to attend the film upon its initial release. Laying the foundation for many of its later traditions, which became AVClub’s Viewer’s Guide, which we used as an inspiration for this website. As of today, fans keep attending screenings and expanding upon its myth. Back in 2008, The Room was named ‘the greatest cult film of the decade.’ At this rate, it could as well become the greatest cult film of the century.</p>
-                    <p>Why spoons? Well, film scholar Ernest Mathijs, head of the Centre for Cinema Studies, introduced a successful screening in Brussels. He postulated that a plastic spoon is a symbol for waste and uselessness. Something that you use once, and never use again. If we ask ourselves the question, why would we revisit waste, there’s perhaps a lesson to be learned.</p>
-                    <p>To conclude, we would like to say that this viewer’s guide, in no possible way, is a definite description of what a Room-screening should be. The Room is not something you experience in a predestined way, ticking of checklists, throwing around footballs because you have to. A screening is at its best a place of experimentation. Every single quote or action is capable to invoke imitation or laughter. You shouldn’t narrow yourself down to a set of rules. But of course, having a few good ideas in mind before entering the theatre wouldn’t hurt. We didn’t even scratch the surface about what The Room has to offer. In its own, little idiosyncratic world, it might as well be the best film ever made. There is a reason why most film buffs saw The Room more than Citizen Kane. It is a celebration of film. Even if it’s not the type of work you would consider ‘grand art’, you should be grateful for it.</p>
+                    <p>The hardest thing about writing an introduction is motivating why it is necessary. I mean, you just stumbled upon a website dedicated to ‘The Room’. Surely this isn’t a coincidence? Why in God’s name would you search for ‘Room Viewing Guide’, if not on purpose?</p>
+                    <p>And yet, here it is. A full-blown introduction, meant to welcome you to this little project. The authors behind this site are dedicated roomies, eager to spread the film’s ‘message’ to as much people as possible. Most of you may be wondering ‘why the hell would you put that much effort into this? Isn’t ‘The Room’ just something you make fun of?’ Well, yes, and no. The entire idea behind the viewer’s guide is to maximise your enjoyment of the film. But, on another level, there is a deeper discussion to be found here. The fact that ‘The Room’ has the ‘official’ status of ‘Worst Film Ever Made’, doesn’t account for its success in the Midnight Film Circuit. Actually, we can argue that there are worse films out there. Say what you like, at least ‘The Room’ is consistently bad, which paradoxically makes it more watchable than many ‘average’ films.</p>
+                    <p>Part of its appeal derives from its enigma. There’s a substantial amount of scholarship done around the phenomenon of ‘cult film’. Why does one film gather a large cult audience when other films fade into obscurity? The answer is: we don’t really know. When we look at different cult films, we can only conclude that it is the audience that decides what is cult and what is not. But there are some striking similarities. When we take two big 20th-century cult hits, like ‘The Rocky Horror Picture Show’, or ‘The Big Lebowski’, what are the similarities? They are both very quotable for one. But these are films people can relate to, and that are deeply embedded in their time of origin. Passion sticks, and it survives through age.</p>
+                    <p>But how can we compare ‘The Room’ to these two classics? Well, possibly for that same reason. Passion sticks. The film continues to fascinate viewers, not for its badness, but for its passion. Even if this passion is, to put it mildly, ‘misplaced.’ Take a look at the facts: the film played for two weeks, grossing only 1900 dollars, which makes it the biggest flop in box office history. It was shot on a budget of six million dollars, with photography taking up an entire 6 months. There were 400 crew members, on two units, along with cast members, who were constantly replaced. This is fairly unique in B-cinema, which is usually associated with poor production values. Of course, that money didn’t exactly show up on the screen. The film’s story  originated as a play, became a 500-page book, which Wiseau then adapted into a screenplay. No one knows how Wiseau managed to scrape all that money together. There are some interviews with Wiseau where he talks about importing leather jackets, but this hasn’t been confirmed yet. Likewise, Greg Sestero, playing Mark in the film, shows us only a tip of the iceberg in his autobiographical ‘The Disaster Artist.’ For every mystery solved, a dozen more pop up.</p>
+                    <!-- <p>Some additional research has been done. Apparently, Tommy Wiseau came from the Soviet-union and entered America at a later point in his life. That’s all we know. Wiseau refuses to share his origin story, to the regret of his fans, because everyone wants to know what makes the man tick. After all, he made ‘The Room’, so some deeply disturbing stuff must have happened in his lifetime. This is Hollywood’s most secretive man. He made, presumably, the worst film ever made, believing it’s a masterpiece. He paid, from his own money, for a billboard advertising his film. For a total of five years, the billboard became a tourist attraction, which was visited more than the film itself. ‘The Room’, according to Wiseau, is a place where good and bad things happen. That may be true, but it is also a place of great secrets. Perhaps that’s the reason why we revisit it time and time again.</p> -->
+                    <p>Passion sticks, and the same goes for its large fansbase. All over the world, Room-screenings are held and celebrated. If not for these people, the film would have died. The original roomie is, of course, Michael Rousselet: a screenwriter, who started gathering groups of friends to attend the film upon its initial release. Laying the foundation for many of its later traditions, which became AVClub’s Viewer’s Guide, which we used as an inspiration for this website. As of today, fans keep attending screenings and expanding upon its myth. Back in 2008, ‘The Room’ was named ‘the greatest cult film of the decade.’ At this rate, it could as well become the greatest cult film of the century.</p>
+                    <p>Why spoons? Well, film scholar Ernest Mathijs, head of the Centre for Cinema Studies, introduced a successful screening in Brussels. He postulated that a plastic spoon is a symbol for waste and uselessness. Something that you use once and never use again. If we ask ourselves the question: ‘why would we revisit waste?’  there’s perhaps a lesson to be learned.</p>
+                    <p>To conclude, we would like to say that this viewer’s guide, in no possible way, is a definite description of what a Room-screening should be. ‘The Room’ is not something you experience in a predestined way, ticking of checklists, throwing around footballs because you have to. A screening is at its best a place of experimentation. Every single quote or action is capable to invoke imitation or laughter. You shouldn’t narrow yourself down to a set of rules. But of course, having a few good ideas in mind before entering the theatre wouldn’t hurt. We didn’t even scratch the surface about what ‘The Room’ has to offer. In its own little idiosyncratic world, it might as well be the best film ever made. There is a reason why most film buffs saw ‘The Room’ more than Citizen Kane. It is a celebration of film. Even if it’s not the type of work you would consider ‘grand art’, you should be grateful for it.</p>
                     <p>Just keep throwing those spoons.</p>
                     <span class="img-util"><img src="images/assets/spoon-picture.jpg" alt="Picture of a spoon." class="mb-3 img-util__responsive-50"></span>
                     <p>The authors.</p>
@@ -110,9 +114,8 @@
                     <p>Attending a Room-screening, or hosting one with your friends, is supposed to be fun. Cheering is part of the game. You can cheer, applaud, whistle or yell things during certain moments in the film.</p>
                     <h3>Wiseau!</h3>
                     <figure class="figure w-100 tommy-img">
-                        <img src="images/assets/tommy-or.jpg" alt="Tommy Wiseau" class="tommy-img__photo">
-                        <img src="images/assets/tommy-wiseau.jpg" alt="Written by Tommy Wiseau" class="figure-img img-fluid w-100 tommy-img__main">
-                        <figcaption class="figure-caption">His name appears once more.</figcaption>
+                        <img src="images/assets/tommy.jpg" alt="Tommy Wiseau" class="tommy-img__photo">
+                        <img src="images/assets/tommy-wiseau.jpg" alt="Written by Tommy Wiseau" class="figure-img img-fluid w-100 tommy-img__main m-0">
                     </figure>
                     <p>The most obvious ones are in the opening credits. You cheer when you read ‘Tommy Wiseau’ (which is about 10 times in the opening credits, since the guy did pretty much everything), and you go full rampage when ‘THE ROOM’-title appears in all its glory. It is only appropriate that we thank the film’s director for the existence of this masterpiece.</p>
                     <h3>Flower shop</h3>
@@ -124,8 +127,7 @@
                     <p>This is by far one of the most iconic and quoted lines in the film. Everyone will yell it off the top of their lungs, so go along with it. Look for it in the flower shop-scene. You will notice it when everyone starts cheering for no reason.</p>
                     <h3><em class="emphasize-quote">You are tearing me apart, Lisa!</em></h3>
                     <figure class="figure w-100">
-                        <img src="images/assets/you-are-tearing-me-apart.jpg" alt="You are tearing me apart, Lisa!" class="figure-img img-fluid w-100">
-                        <figcaption class="figure-caption">Well, nothing to say about this one :)</figcaption>
+                        <img src="images/assets/you-are-tearing-me-apart.jpg" alt="You are tearing me apart, Lisa!" class="figure-img img-fluid w-100 m-0">
                     </figure>
                     <p>‘Oh hai Doggy’ is the most iconic line for the fans, but ‘You are tearing me apart, Lisa’ is the most famous line in its own right. If you don’t know where it is: if the entire audience starts to get uneasy, arms by their side like they’re waiting for a football team to score a point, you know it’s coming. After the line-delivery, it is appropriate to cheer.</p>
                     <h3><em class="emphasize-quote">Oh hai character!!</em></h3>
@@ -156,6 +158,10 @@
                     <p>After the first sex scene has ended, you will have the opportunity to gaze upon Tommy Wiseau’s ass. When the big reveal happens, and in the seconds preceding it, yell as scared and grossed out as you can.</p>
                     <h3><em class="emphasize-quote">Anyway, how’s your sex-life?</em></h3>
                     <p>At this point, the newbies in the audience will be totally lost, and at this point, they’ll be too afraid to ask. This is the most awkward quote in the film. It happens in the hot chocolate-scene (you know, after having to sit through half of San Francisco ordering stuff). Say it as casually as possible.</p>
+                    <h3>Mission Impossible</h3>
+                    <p>When Johnny starts tapping the phone, start humming the Mission Impossible-theme. This sometimes poses issues, as it is unclear where to start humming. It starts when he hooks the recorder up, not when he pulls it out of his pocket. (because, you know, that’s where you keep tape recorders.)</p>
+                    <h3>Celebrate Johnny’s birthday</h3>
+                    <p>When Johnny stumbles upon his surprise party, join the cast as they yell ‘SURPRISE.’ Of course, it is customary to sing Happy Birthday for him.</p>
                 </section>
                 <section id="activities" class="jumptarget article__section">
                     <h2>Activities</h2>
@@ -166,8 +172,7 @@
                     <p>Filmgoing is a static experience, right? Not so when attending a Room-screening. Here are a few things you can do to get your blood flowing.</p>
                     <h3>Playing football</h3>
                     <figure class="figure w-100">
-                        <img src="images/assets/throw-football.jpg" alt="Mark holding a football." class="figure-img img-fluid w-100">
-                        <figcaption class="figure-caption">The football is often featured in the film.</figcaption>
+                        <img src="images/assets/throw-football.jpg" alt="Mark holding a football." class="figure-img img-fluid w-100 m-0">
                     </figure>
                     <p>A lot of scenes feature characters playing football. When this happens, just do the same with your friends. Position yourself strategically in the theatre, or just stand up and throw from the sides. Just make sure not to hit the screen. Or, to a lesser extent, other people.</p>
                     <h3>Reenactment</h3>
@@ -176,12 +181,10 @@
                     <p>You can bring a small pillow to smack your friends at the appropriate moments in the film. Also, if you’ve managed to bring a friend that doesn’t like the film, you can use it to punch him when he falls asleep.</p>
                     <h3>Break time</h3>
                     <p>A Room-screening is fun, but also exhausting. If you’re in need for a break, use the last sex scene featuring Mark and Lisa. This is the longest and most uneventful scene in the entire film. So if you want to empty your bladder before the film’s last part, or take a quick puff of a cigarette, now’s the time. When attending larger screenings, expect long waiting lines at the toilet.</p>
-                    <h3>Mission Impossible</h3>
-                    <p>When Johnny starts tapping the phone, start humming the Mission Impossible-theme. This sometimes poses issues, as it is unclear where to start humming. It starts when he hooks the recorder up, not when he pulls it out of his pocket. (because, you know, that’s where you keep tape recorders.)</p>
                     <h3>Sit on the floor</h3>
                     <p>When Denny suddenly sits on the floor, you can do the same, for as long as you like. Just make sure not to miss anything important.</p>
                     <h3>Mourning</h3>
-                    <p>Spoiler alert: <span class="spoiler no-select">Johnny dies in the end</span>. When he’s <span class="spoiler no-select">lying on the floor</span> with the other characters, get up from your seat and stand next to the screen, to stand alongside the characters. Express your <span class="spoiler no-select">heartfelt sorrow for Johnny’s death</span>. I’ve seen people cheering after <span class="spoiler no-select">the gunshot</span>, don’t do this. The scene requires something different.</p>
+                    <p>Spoiler alert: <span class="spoiler no-select">Johnny dies in the end</span>. When he’s <span class="spoiler no-select">lying on the floor</span> with the other characters, get up from your seat and stand next to the screen, to stand alongside the characters. Express your <span class="spoiler no-select">heartfelt sorrow for Johnny’s death</span>. Especially during Denny’s monologue. I’ve seen people cheering after <span class="spoiler no-select">the gunshot</span>, don’t do this. The scene requires something different.</p>
                 </section>
                 <section id="singalong" class="jumptarget article__section">
                     <h2>Sing-along</h2>
@@ -214,7 +217,7 @@
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CwrRkOSIoLs?ecver=1" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </section>
-                <section id="screenings" class="jumptarget article__section">
+                <section id="screenings" class="jumptarget article__section mb-0">
                     <h2>Screenings</h2>
                     <blockquote class="blockquote">
                         <p class="mb-0">Thank you, honey, this is a beautiful party! You invited all my friends. Good thinking!</p>
@@ -247,28 +250,32 @@
                     </blockquote>
                     <p>Some people like to mix the Skotchka-drink featured in the film during a screening. While the authors of these guide are unable to deny the enjoyment these sorts of substance can bring, only if to enhance the experience to a whole new spiritual level, some caution is advised. For one, most theatre owners don’t appreciate alcohol consumption. For two, The Room is a drug on its own, you don’t need it.</p>
                 </section>
-                <section id="additional" class="jumptarget article__section mb-0">
-                    <h2>Additional Content</h2>
-                    <pre>Hier zou ik een sectie maken met wat relevante links.
-
- - Wiseau-interviews.
- - DVD-extras.
- - The Disaster Artist
- - The Masterpiece.
- - The Room-soundtrack op LP.
- - Wiseau-onderbroeken en horloges.</pre>
-                </section>
             </article>
+            <aside class="col-12 col-md-4 col-sm-10 article article--aside">
+                <div id="additional" class="jumptarget article__section mb-0">
+                    <h2 class="article__section--aside article__title--aside">Additional Content</h2>
+                    <p>For more information, please call Thomas P. Wiseau at <a href="tel:001-323-654-6192"><i class="fa fa-phone" aria-hidden="true"></i> 001-323-654-6192</a></p>
+                    <h3>Related links</h3>
+                    <ul class="list-unstyled">
+                        <li class="related-link">
+                            <a href="https://www.roomfullofspoons.com/" target="_blank"><i class="fa fa-external-link-square" aria-hidden="true"></i> Room Full of Spoons (documentary)</a>
+                        </li>
+                        <li class="related-link">
+                            <a href="https://www.facebook.com/groups/1490239401231171/" target="_blank"><i class="fa fa-external-link-square" aria-hidden="true"></i> Room fan Group (facebook)</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
         </div>
     </div>
 </main>
 <footer class="footer footer--padding text-right">
     <div class="container">
         <div class="row d-flex align-items-end">
-            <div class="col-8 ml-auto col-md-4">
-                <div class="contact footer__element mt-0">
-                    <h2 class="mb-2 contact__name">Nick D'hondt</h2>
-                    <ul class="list-unstyled m-0">
+            <div class="col-8 footer__right col-md-4">
+                <div class="contact footer__column mt-0">
+                    <h2 class="contact__name">Nick D'hondt</h2>
+                    <ul class="list-unstyled contact__list">
                         <li>
                             <a href="https://www.linkedin.com/in/nick-dhondt/" class="contact__ref" target="_blank">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                         </li>
@@ -281,10 +288,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-8 ml-auto col-md-4">
-                <div class="contact footer__element">
-                    <h2 class="mb-2 contact__name">Vinnie De Craim</h2>
-                    <ul class="list-unstyled m-0">
+            <div class="col-8 footer__right col-md-4">
+                <div class="contact footer__column">
+                    <h2 class="contact__name">Vinnie De Craim</h2>
+                    <ul class="list-unstyled contact__list">
                         <li>
                             <a href="https://be.linkedin.com/in/vinniedecraim" class="contact__ref" target="_blank">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                         </li>
@@ -294,11 +301,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-8 ml-auto col-md-4">
-                <div class="footer__element">
-                    <div class="brand brand--right no-select ml-auto p-0">
-                        The Room viewer's guide
-                    </div>
+            <div class="col-8 footer__right col-md-4">
+                <div class="footer__column footer__column--padding-lg">
+                    <div class="brand brand--right no-select">The Room viewer's guide</div>
                 </div>
             </div>
         </div>
