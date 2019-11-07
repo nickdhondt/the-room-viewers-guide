@@ -1,27 +1,58 @@
-html, body {
+html,
+body {
     color: #000;
     font-family: "Noto Sans", sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: bold;
 }
 
 h3::before {
     background-image: url("../images/assets/better-football.png");
     background-size: 20px 20px;
-    content:"";
+    content: "";
     display: inline-block;
     height: 20px;
     margin-right: .5rem;
     width: 20px;
 }
 
+.article--aside a {
+    border-bottom: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+}
+
+.article--aside a:hover {
+    border-bottom: none;
+    background: #fcf8e3;
+}
+
+.related-link {
+    margin-bottom: .33rem;
+}
+
+.related-link:last-child {
+    margin-bottom: 0;
+}
+
 main {
-    margin-top: 106px;
+    margin-top: 110px;
 }
 
 /* === GENERAL === */
+
+.top {
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 0;
+    z-index: -999;
+}
 
 .no-select {
     -webkit-user-select: none;
@@ -56,14 +87,17 @@ main {
 .jumptarget::before {
     content: "";
     display: block;
-    height: 74px;
-    margin: -74px 0 0;
+    height: 72px;
+    margin: -72px 0 0;
     pointer-events: none;
 }
 
 .subtitle {
     border-bottom: 1px solid #000;
     font-weight: bold;
+    line-height: 1rem;
+    padding-bottom: 1rem;
+    padding-top: .25rem;
     position: relative;
     z-index: 998;
 }
@@ -74,8 +108,6 @@ main {
 }
 
 .img-util__responsive-50 {
-    /* Maybe later */
-    /*zoom: 50%;*/
     width: 50%;
 }
 
@@ -100,8 +132,6 @@ main {
 }
 
 .tommy-img__photo {
-    background-image: url("../images/assets/tommy-or.jpg");
-    background-size: 100px 100px;
     display: block;
     height: 100px;
     position: absolute;
@@ -125,15 +155,38 @@ main {
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.19rem;
-    padding-bottom: .8rem;
     text-transform: uppercase;
-    transition: font-size .5s, line-height .5s;
     width: 50px;
 }
 
-.brand--sm {
-    font-size: .75rem;
-    line-height: .64rem;
+.brand--transition {
+    height: 76px;
+    transform: scale(1);
+    transform-origin: top left;
+    transition: transform .5s, height .5s;
+}
+
+.brand__container {
+    padding: 1rem 0 .8rem 1rem;
+    position: relative;
+}
+
+.brand__background {
+    position: absolute;
+    top: 1rem;
+    transition: width .5s;
+    width: 190px;
+    z-index: -1;
+    opacity: .25;
+}
+
+.header__bar--sm .brand__background {
+    width: 108px;
+}
+
+.brand--transition.brand--sm {
+    height: 38px;
+    transform: scale(0.5);
 }
 
 .brand .brand__ref {
@@ -147,6 +200,7 @@ main {
     direction: rtl;
     font-size: 2rem;
     line-height: 1.7rem;
+    margin-left: auto;
 }
 
 /* === ARTICLE === */
@@ -155,7 +209,16 @@ main {
     border-right: .35rem solid #000;
 }
 
-.article__section > p:last-child {
+.article__content {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.article__row {
+    padding-right: 1rem;
+}
+
+.article__section>p:last-child {
     margin: 0;
 }
 
@@ -163,27 +226,36 @@ main {
     margin-bottom: 1rem;
 }
 
-.article__section > p, .article__section > ol {
+.article__section--aside {
+    padding-top: 1rem;
+}
+
+.article__section>p,
+.article__section>ol {
     font-family: "Lora", serif;
 }
 
 .article__section--intro {
     font-family: "Noto Sans", sans-serif;
     font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
-.article__section--intro > p {
+.article__section--intro>p {
     font-family: inherit;
 }
 
 .article__title {
     border-bottom: 1px solid #000;
+    margin: 0;
+    padding-bottom: 1rem;
 }
 
 .article__authors {
-    color: #777;
-    font-size: .8rem;
+    color: #bbb;
+    font-size: .75rem;
     font-weight: bold;
+    margin-bottom: .5rem;
     text-transform: uppercase;
 }
 
@@ -195,36 +267,28 @@ main {
 
 .header__bar {
     border-bottom: .35rem solid #000;
-    position: relative;
-}
-
-.header__bar::after {
-    background-image: url("../images/assets/football-header.png");
-    background-repeat: no-repeat;
-    background-size: 190px;
-    bottom: 0;
-    content: "";
-    left: 1rem;
-    opacity: 0.25;
-    position: absolute;
-    right: 0;
-    top: 1rem;
-    transition: background .5s;
-    z-index: -1;
-}
-
-.header__bar--sm::after {
-    background-size: 115px;
+    overflow: hidden;
+    padding: 0;
 }
 
 .nav-box__spoon {
+    pointer-events: none;
     display: none;
-    margin: 0 auto .33rem auto;
-    position: relative;
-    width: 4rem;
+    left: 1rem;
+    margin: 0;
+    position: absolute;
+    top: .5rem;
+    width: 3.5rem;
 }
 
-.nav-box__ref:hover + .nav-box__spoon, .nav-box__ref:focus + .nav-box__spoon, .nav-box__ref--active + .nav-box__spoon {
+.nav-box__container {
+    position: relative;
+    display: table-cell;
+}
+
+.nav-box__ref:hover+.nav-box__spoon,
+.nav-box__ref:focus+.nav-box__spoon,
+.nav-box__ref--active+.nav-box__spoon {
     display: block;
 }
 
@@ -233,21 +297,10 @@ main {
     display: block;
     font-weight: bold;
     line-height: .55rem;
+    padding: 1rem;
     position: relative;
     text-decoration: none;
     white-space: nowrap;
-}
-
-.nav-box__ref::after {
-    background-image: url("../images/assets/better-spoon.png");
-    background-size: 48px 22px;
-    content: "";
-    display: inline-block;
-    height: 22px;
-    left: 1rem;
-    position: absolute;
-    top: 9px;
-    width: 48px;
 }
 
 .header__hamburger {
@@ -255,13 +308,16 @@ main {
     color: #fff;
     cursor: pointer;
     font-weight: bold;
+    margin: .5rem .5rem 0 0;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 9999;
 }
 
-.nav-box__ref:hover, .nav-box__ref--active, .nav-box__ref:focus {
+.nav-box__ref:hover,
+.nav-box__ref--active,
+.nav-box__ref:focus {
     background: #000;
     color: #fff;
     text-decoration: none;
@@ -279,67 +335,98 @@ main {
     color: #fff;
 }
 
+.footer__right {
+    margin-left: auto;
+}
+
 .footer--padding {
     padding-bottom: 3rem;
     padding-top: 3rem;
 }
 
-.footer__element {
+.footer__column {
     border-bottom: .2rem solid #fff;
     margin-top: 2rem;
     padding-bottom: .5rem;
 }
 
+.footer__column--padding-lg {
+    padding-bottom: .7rem;
+}
+
 /* === CONTACT === */
 
 .contact {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 .contact__name {
     font-size: 1.2rem;
     font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.contact__list {
+    margin: 0;
 }
 
 .contact .contact__ref {
-    color: #aaa;
+    color: #fff;
+    text-decoration: none;
 }
 
 .contact__ref:hover {
-    border-bottom: 1px solid #aaa;
-    text-decoration: none;
+    border-bottom: 1px solid #fff;
 }
 
 @media screen and (min-width: 768px) {
     .img-util__responsive-50 {
-        /* Maybe later */
-        /*zoom: 100%;*/
         width: 100%;
     }
-}
 
-@media screen and (min-width: 992px) {
+    .article__content {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+
+    .subtitle {
+        padding-bottom: 1.5rem;
+    }
+
+    .footer__column {
+        margin-top: 0;
+    }
+
+    .footer--padding {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+
+    .article--aside {
+        border: none;
+    }
+
+    .article__title--aside {
+        font-weight: normal;
+        border-bottom: 1px solid #000;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .article__section--aside {
+        padding-top: 0;
+    }
+
+    /*}*/
+
+    /*@media screen and (min-width: 992px) {*/
     main {
         margin-top: 142px;
     }
 
     .jumptarget::before {
-        height:86px;
-        margin:-86px 0 0;
-    }
-
-    .tommy-img:hover .tommy-img__photo {
-        right: -100px;
-        top: calc(50% - 100px);
-    }
-
-    .tommy-img__photo {
-        background-size: 150px 150px;
-        height: 150px;
-        right: 0;
-        top: calc(50% - 100px);
-        transform: rotate(90deg);
-        width: 150px;
+        height: 88px;
+        margin: -88px 0 0;
     }
 
     .brand {
@@ -347,9 +434,12 @@ main {
         line-height: 1.7rem;
     }
 
-    .brand--sm {
-        font-size: 1rem;
-        line-height: .85rem;
+    .brand--transition {
+        height: 108px;
+    }
+
+    .brand--transition.brand--sm {
+        height: 54px;
     }
 
     .nav-box {
@@ -357,24 +447,29 @@ main {
         border-top: none;
     }
 
-    .header__bar::after {
-        background-size: 300px;
+    .brand__background {
+        width: 300px;
     }
 
-    .header__bar--sm::after {
-        background-size: 160px;
+    .header__bar--sm .brand__background {
+        width: 168px;
     }
 
-    .nav-box__ref::after {
+    .nav-box__spoon {
+        left: auto;
+        margin: 0 auto .33rem auto;
+        position: relative;
+        top: auto;
+        width: 4rem;
+    }
+}
+
+@media print {
+    .print-absolute {
+        position: absolute;
+    }
+
+    .print-hidden {
         display: none;
-    }
-
-    .footer__element {
-        margin-top: 0;
-    }
-
-    .footer--padding {
-        padding-bottom: 5rem;
-        padding-top: 5rem;
     }
 }
